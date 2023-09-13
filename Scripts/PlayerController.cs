@@ -31,4 +31,9 @@ public class PlayerController : MonoBehaviour
         movementX = movementVector.x;
         movementY = movementVector.y;
     }
+
+    public void OnFire()
+    {
+        WeaponController.instance.Shoot();
+    }
 }
